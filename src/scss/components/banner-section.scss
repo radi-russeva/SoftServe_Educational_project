@@ -1,0 +1,75 @@
+.spacer{
+    width: 100%;
+    height: 134px;
+}
+.internal-content{
+    width: 100%;
+    background:-webkit-linear-gradient(119deg, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0.2) 100%);
+    background-blend-mode: soft-light;
+    padding: 205px 219px 170px 81px;
+}
+.banner-heading {
+@include white-mennu-items;
+font-size: 60pt;
+}
+.brazr-url{
+@include white-mennu-items;
+font-size: 34pt;
+opacity: 0.5;
+}
+.arrow-right{
+border: solid white;
+border-width: 0 4px 4px 0;
+display: inline-block;
+padding: 9px;
+transform: rotate(-45deg);
+border-radius: 2px;
+}
+.arrow-btn{
+    background: none;
+    border: none;
+    padding-left: 390px;
+}
+@media screen and (max-width: 640px) {
+    .spacer{
+        height: 75px;
+    }
+.banner-heading {
+    font-size: 30pt;
+    }
+    .brazr-url { 
+        font-size:17pt;
+    }
+    .arrow-right {
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 7px;
+    }
+    .arrow-btn{
+        padding-left: 220px;
+    }
+}
+@media screen and (max-width: 640px) {
+.internal-content{
+    padding: 115px 134px 105px 53px;
+}
+.banner-heading {
+    font-size: 15pt;
+}
+.brazr-url { 
+    font-size:8pt;
+}
+ .arrow-right{
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 6px;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+    }
+    .arrow-btn{
+        background: none;
+        border: none;
+        padding-left: 200px;
+    }
+}

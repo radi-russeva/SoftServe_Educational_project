@@ -4,9 +4,10 @@
 // Feel free with using ES6 here.
 import $ from 'jquery';
 
-import dots from './modules/dots';
+import onOpenMenu from './modules/elements-for-menu';
 
 // When DOM is ready
 $(() => {
-  dots();
+    onOpenMenu();
 });
+

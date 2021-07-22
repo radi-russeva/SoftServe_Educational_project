@@ -7,6 +7,21 @@
 /// @link https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
 /// @example @include word-wrap;
 
+@mixin grey-menu-style {
+  padding:  43px 55px 40px 45px;
+  background-color: #373c3f;
+  width: 100%;
+}
+@mixin white-mennu-items {
+color: #fff;
+ font-family: 'Montserrat', sans-serif;
+ padding-right: 17px;
+ text-decoration: none;
+ cursor: pointer;
+ display: inline-block;
+}
+
+
 @mixin word-wrap() {
   overflow-wrap: break-word;
   word-wrap: break-word;

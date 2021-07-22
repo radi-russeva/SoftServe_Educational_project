@@ -1,0 +1,43 @@
+.pictures-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+.pictures-container img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.purple-arrow,
+.bridge-picture,
+.woman-picture {
+    height: 297px;
+    flex-grow: 1;
+}
+.purple-arrow a {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+.purple-arrow {
+    background-color: #5b0fa1;
+}
+.arrow-right {
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 9px;
+    transform: rotate(-45deg);
+    border-radius: 2px;
+}
+.arrow-btn-pictures {
+    background: none;
+    border: none;
+    padding: 123px 162px 138px 163px;
+}
+
+@media screen and (max-width: 640px) {
+    
+}

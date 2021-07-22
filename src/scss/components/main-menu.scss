@@ -1,0 +1,108 @@
+
+//Actual selectors for main menu
+.main-menu-container {
+  @include grey-menu-style();
+  margin-top: 0px;
+  position: fixed;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.main-menu-container a, .main-menu-container span{
+  @include white-mennu-items();
+ } 
+
+//Responsive menu
+.nav-list li {
+  display: inline-block;
+}
+
+.black-nav-button{
+  background-color: var(--color-grey);
+  padding: 26px 26px 26px 26px;
+  display: none;
+  z-index: 2000;
+  position: fixed;
+  }
+#menu-nav{
+  display: none;
+}
+.btn-hamburger {
+  background-color: var(--color-grey);
+  border: none;
+  color: var(--color-grey);
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: var(--color-white);
+  transition: 0.4s;
+}
+.bar2 {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+//Change class
+.change .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.change .bar2 {opacity: 0;}
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+//Media query for responsive menu
+
+@media screen and (max-width: 640px) {
+  .main-menu-container {
+    padding-top: 28px;
+    padding-bottom: 29px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .black-nav-button{
+  display: block;
+  height: 76px;
+  margin-left: 290px;
+  }
+  #menu-nav{
+    display: block;
+  }
+  .main-menu-container ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+
+  .main-menu-container {
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+  .black-nav-button{
+  display: block;
+  padding: 14px 13px;
+  margin-left: 190px;
+  }
+  #menu-nav{
+    display: block;
+  }
+
+  .main-menu-container ul {
+    display: none;
+  }
+  .bar1, .bar2, .bar3 {
+  width: 18px;
+  height: 3px;
+  background-color:white;;
+  transition: 0.4s;
+}
+.bar2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+}
+
+
+

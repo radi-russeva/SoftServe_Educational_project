@@ -1,0 +1,63 @@
+.main-url-container{
+    display: flex;
+}
+.main-url-text {
+    flex: 6;
+    background-color: #27212c;
+    padding: 108px 145px 105px 80px;
+}
+.main-url-button {
+    flex: 1;
+    background-color: #bc3183;
+}
+.main-url {
+font-size: 30pt;
+color: #9282a0;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.arrow-right-large{
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(-45deg);
+    border-radius: 6px;
+    }
+    .arrow-btn-large{
+        background: none;
+        border: none;
+        padding: 99px 109px 109px 97px;
+    }
+    @media screen and (max-width: 640px) {
+        .main-url-text {
+            padding: 70px 90px 65px 55px;
+        }
+        .main-url{
+            font-size: 8px;
+        }
+        .arrow-right-large{
+            border-width: 0 4px 4px 0;
+            padding: 6px;
+            border-radius: 3px;
+        }
+        .arrow-btn-large{
+            padding: 60px 62px 66px 62px;
+        }
+    }
+    @media screen and (max-width: 376px) {
+        .main-url-text {
+            padding: 35px 39px 35px 30px;
+        }
+        .main-url{
+            font-size: 8px;
+        }
+        .arrow-right-large{
+            border-width: 0 4px 4px 0;
+            padding: 6px;
+            border-radius: 3px;
+        }
+        .arrow-btn-large{
+            padding: 27px 33px 33px 27px;
+        }
+    }
