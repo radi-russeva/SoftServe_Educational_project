@@ -1,0 +1,39 @@
+.bsr-description-container {
+    background-color: var(--color-light-grey);
+    padding: 53px 80px 175px 80px;
+    display: flex;
+}
+.bsr-text {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif !important;
+    color: #515151;
+}
+.col1-bsr-text,
+.col2-bsr-text {
+    flex: 1;
+}
+.col1-bsr-text {
+    padding-right: 27px;
+}
+.col2-bsr-text {
+    padding-top: 50px;
+    padding-left: 27px;
+}
+.bsr-article-heading {
+    font-weight: normal;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: #088ca5;
+}
+.blank-space {
+    height: 50px;
+    width: 100%;
+}
+@media screen and (max-width: 640px) {
+    .bsr-description-container {
+        display: block;
+    }
+    .col2-bsr-text {
+        padding-left: 0px;
+    }
+}
