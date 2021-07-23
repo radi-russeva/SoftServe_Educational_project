@@ -29,6 +29,29 @@ color: #9282a0;
         border: none;
         padding: 99px 109px 109px 97px;
     }
+
+    @media screen and (max-width: 768px) {
+        .main-url-text {
+            padding: 70px 90px 65px 55px;
+        }
+        .main-url{
+            font-size: 15px;
+        }
+        .arrow-right-large{
+            border-width: 0 4px 4px 0;
+            padding: 6px;
+            border-radius: 3px;
+        }
+        .arrow-btn-large{
+            padding: 60px 62px 66px 62px;
+        }
+        
+    }
+    @media screen and (max-width: 1024px) {
+        .main-url {
+            font-size: 20pt;
+        }
+        }
     @media screen and (max-width: 640px) {
         .main-url-text {
             padding: 70px 90px 65px 55px;

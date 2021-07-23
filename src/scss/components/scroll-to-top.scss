@@ -1,0 +1,39 @@
+.scroll-to-top-btn {
+    border: none;
+    background-color: transparent;
+}
+.scroll-to-top{
+    padding: 50px 620px 50px 580px;
+}
+@media screen and (max-width: 1024px) {
+    .scroll-to-top{
+        padding: 20px 220px 20px 490px;
+    }
+    .scroll-to-top-btn {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .scroll-to-top{
+        padding: 20px 260px 20px 340px;
+    }
+    .scroll-to-top-btn {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 376px) {
+    .scroll-to-top{
+        padding: 20px 140px 20px 140px;
+    }
+    .scroll-to-top-btn {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 320px) {
+    .scroll-to-top{
+        padding: 20px 112px 20px 112px;
+    }
+    .scroll-to-top-btn {
+        width: 40%;
+    }
+}

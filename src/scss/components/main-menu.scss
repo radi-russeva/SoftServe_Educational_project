@@ -1,4 +1,3 @@
-
 //Actual selectors for main menu
 .main-menu-container {
   @include grey-menu-style();
@@ -8,23 +7,24 @@
   z-index: 10;
 }
 
-.main-menu-container a, .main-menu-container span{
+.main-menu-container a,
+.main-menu-container span {
   @include white-mennu-items();
- } 
+}
 
 //Responsive menu
 .nav-list li {
   display: inline-block;
 }
 
-.black-nav-button{
+.black-nav-button {
   background-color: var(--color-grey);
   padding: 26px 26px 26px 26px;
   display: none;
   z-index: 2000;
   position: fixed;
-  }
-#menu-nav{
+}
+#menu-nav {
   display: none;
 }
 .btn-hamburger {
@@ -32,7 +32,9 @@
   border: none;
   color: var(--color-grey);
 }
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 30px;
   height: 5px;
   background-color: var(--color-white);
@@ -46,63 +48,104 @@
 .change .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 .change .bar3 {
   transform: rotate(45deg) translate(-7px, -7px);
 }
 
 //Media query for responsive menu
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .main-menu-container {
-    padding-top: 28px;
-    padding-bottom: 29px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 28px 30px 29px 37px;
   }
-  .black-nav-button{
-  display: block;
-  height: 76px;
-  margin-left: 290px;
+  .black-nav-button {
+    display: block;
+    margin-left: 682px;
+    padding: 24px 26px 24px 26px;
   }
-  #menu-nav{
+  #menu-nav {
     display: block;
   }
   .main-menu-container ul {
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 376px) {
   .main-menu-container {
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding: 14px 30px 14px 20px;
   }
-  .black-nav-button{
-  display: block;
-  padding: 14px 13px;
-  margin-left: 190px;
-  }
-  #menu-nav{
+  .black-nav-button {
     display: block;
+    padding: 14px 13px;
+    margin-left: 322px;
+  }
+  #menu-nav {
+    display: block;
+  }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-4px, -4px);
   }
 
   .main-menu-container ul {
     display: none;
   }
-  .bar1, .bar2, .bar3 {
-  width: 18px;
-  height: 3px;
-  background-color:white;;
-  transition: 0.4s;
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 18px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  .bar2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
 }
-.bar2 {
-  margin-top: 2px;
-  margin-bottom: 2px;
+@media screen and (max-width: 320px) {
+  .main-menu-container {
+    padding: 14px 30px 14px 20px;
+  }
+  .black-nav-button {
+    display: block;
+    padding: 14px 13px 13px;
+    margin-left: 270px;
+  }
+  #menu-nav {
+    display: block;
+  }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: rotate(45deg) translate(-4px, -4px);
+  }
+
+  .main-menu-container ul {
+    display: none;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 18px;
+    height: 3px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  .bar2 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
 }
-}
-
-
-
