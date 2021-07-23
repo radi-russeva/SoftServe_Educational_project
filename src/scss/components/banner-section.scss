@@ -50,6 +50,9 @@ border-radius: 2px;
     }
 }
 @media screen and (max-width: 640px) {
+    .spacer{
+        height:0px;
+    }
 .internal-content{
     padding: 115px 134px 105px 53px;
 }

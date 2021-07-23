@@ -53,17 +53,13 @@
 
 //Media query for responsive menu
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .main-menu-container {
-    padding-top: 28px;
-    padding-bottom: 29px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 28px 30px 29px 37px;
   }
   .black-nav-button{
   display: block;
-  height: 76px;
-  margin-left: 290px;
+  margin-left: 682px;
   }
   #menu-nav{
     display: block;
@@ -72,21 +68,24 @@
     display: none;
   }
 }
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 376px) {
   .main-menu-container {
-    padding-top: 14px;
-    padding-bottom: 13px;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding: 14px 30px 14px 20px;
   }
   .black-nav-button{
   display: block;
   padding: 14px 13px;
-  margin-left: 190px;
+  margin-left: 322px;
   }
   #menu-nav{
     display: block;
+  }
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-3px, 3px);
+  }
+  .change .bar2 {opacity: 0;}
+  .change .bar3 {
+    transform: rotate(45deg) translate(-4px, -4px);
   }
 
   .main-menu-container ul {

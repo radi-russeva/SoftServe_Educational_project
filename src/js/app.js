@@ -5,9 +5,10 @@
 import $ from 'jquery';
 
 import onOpenMenu from './modules/elements-for-menu';
-
+import scrollToTop from './modules/scroll-to-top';
 // When DOM is ready
 $(() => {
     onOpenMenu();
+    scrollToTop();
 });
 
