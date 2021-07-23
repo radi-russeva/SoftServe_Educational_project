@@ -5,7 +5,7 @@
 .scroll-to-top{
     padding: 50px 620px 50px 580px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px){
     .scroll-to-top{
         padding: 20px 220px 20px 490px;
     }
