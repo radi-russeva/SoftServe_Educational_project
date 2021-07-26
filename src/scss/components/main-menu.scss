@@ -11,6 +11,9 @@
 .main-menu-container span {
   @include white-mennu-items();
 }
+.main-menu-container a{
+  display: inline-block;
+}
 
 //Responsive menu
 .nav-list li {
