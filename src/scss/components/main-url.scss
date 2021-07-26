@@ -6,14 +6,19 @@
     background-color: #27212c;
     padding: 108px 145px 105px 80px;
 }
-.main-url-button {
-    flex: 1;
+.main-url-arrow {
+    flex: 2;
     background-color: #bc3183;
 }
 .main-url {
 font-size: 30pt;
 color: #9282a0;
  font-family: 'Montserrat', sans-serif;
+}
+.arrow-tag-large{
+    display: flex;
+    justify-content: center;
+    padding-top: 111px;
 }
 
 .arrow-right-large{
@@ -24,32 +29,29 @@ color: #9282a0;
     transform: rotate(-45deg);
     border-radius: 6px;
     }
-    .arrow-btn-large{
-        background: none;
-        border: none;
-        padding: 99px 109px 109px 97px;
-    }
-
     @media screen and (max-width: 768px) {
         .main-url-text {
             padding: 70px 90px 65px 55px;
         }
         .main-url{
-            font-size: 15px;
+            font-size: 20px;
         }
         .arrow-right-large{
             border-width: 0 4px 4px 0;
             padding: 6px;
             border-radius: 3px;
         }
-        .arrow-btn-large{
-            padding: 60px 62px 66px 62px;
+        .arrow-tag-large{
+            padding-top: 60px;
         }
         
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
         .main-url {
             font-size: 20pt;
+        }
+        .arrow-tag-large{
+            padding-top: 60px;
         }
         }
     @media screen and (max-width: 640px) {
@@ -64,7 +66,7 @@ color: #9282a0;
             padding: 6px;
             border-radius: 3px;
         }
-        .arrow-btn-large{
+        .arrow-tag-large{
             padding: 60px 62px 66px 62px;
         }
     }
@@ -80,7 +82,10 @@ color: #9282a0;
             padding: 6px;
             border-radius: 3px;
         }
-        .arrow-btn-large{
+        .arrow-tag-large{
             padding: 27px 33px 33px 27px;
+        }
+        .main-url-arrow{
+            padding:25px;
         }
     }
