@@ -1,18 +1,18 @@
 const mainMenuSelector = document.querySelector('.nav-list');
 
 const mainMenuElements = ["PSD WEBSITES", "UI KITS", "PREMIUM PSD FILES", "ABOUT", "BLOG"];
-const displayMenuElements = function(elements) {
-    elements.forEach(element => {
-        const htmlForMenu = `
-        <li> 
-        <a class="main-menu-element"> ${element} </a>
-        </li>
-        `;
-        mainMenuSelector.insertAdjacentHTML("beforeend",htmlForMenu);
-    });
-}
-displayMenuElements(mainMenuElements);
-console.log(mainMenuElements);
+// const displayMenuElements = function(elements) {
+//     elements.forEach(element => {
+//         const htmlForMenu = `
+//         <li> 
+//         <a class="main-menu-element"> ${element} </a>
+//         </li>
+//         `;
+//         mainMenuSelector.insertAdjacentHTML("beforeend",htmlForMenu);
+//     });
+// }
+// displayMenuElements(mainMenuElements);
+// console.log(mainMenuElements);
 
 let isOpen = false;
 const btnHamburger = document.querySelector('.btn-hamburger');
