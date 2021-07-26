@@ -24,7 +24,7 @@
   z-index: 2000;
   position: fixed;
 }
-#menu-nav {
+.menu-nav {
   display: none;
 }
 .btn-hamburger {
@@ -66,7 +66,7 @@
     margin-left: 682px;
     padding: 24px 26px 24px 26px;
   }
-  #menu-nav {
+  .menu-nav {
     display: block;
   }
   .main-menu-container ul {
@@ -82,7 +82,7 @@
     padding: 14px 13px;
     margin-left: 322px;
   }
-  #menu-nav {
+  .menu-nav {
     display: block;
   }
   .change .bar1 {
@@ -120,7 +120,7 @@
     padding: 14px 13px 13px;
     margin-left: 270px;
   }
-  #menu-nav {
+  .menu-nav {
     display: block;
   }
   .change .bar1 {
